@@ -1,3 +1,5 @@
+const { TouchSequence } = require("selenium-webdriver");
+
 class BlazePage {
 
     // NAVBAR ELEMENTS 
@@ -44,6 +46,14 @@ class BlazePage {
         return this.footerChildElementsNoParent.filter(element => {
             console.log(' FOOTER-NO: ' + element.getText());
         })
+    }
+
+
+    navSpecificElement(index) {
+        return this.navParent.$(`li:nth-child(${index})`)
+    }
+    footerSpecificElement(index) {
+        return this.footerParent.$(`li:nth-child(${index})`)
     }
 
 }

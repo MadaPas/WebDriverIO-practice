@@ -19,4 +19,10 @@ describe('Blaze page elements handle', () => {
         blazePage.footerGetTextForLiNoParent;
     });
 
+    it('Gets a specific child', () => {
+        browser.url('https://www.blazemeter.com/');
+        console.log('nav-print: ' + blazePage.navSpecificElement(3).getText())
+        console.log('footer-print: ' + blazePage.footerSpecificElement(3).getText());
+    });
+
 });
