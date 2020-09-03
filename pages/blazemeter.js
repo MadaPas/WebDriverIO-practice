@@ -56,5 +56,11 @@ class BlazePage {
         return this.footerParent.$(`li:nth-child(${index})`)
     }
 
+    getNavSpecificChildElementText(index) {
+        return this.navSpecificElement(index).getText();
+    }
+    getFooterSpecificChildElementText(index) {
+        return this.footerSpecificElement(index).getText();
+    }
 }
 module.exports = new BlazePage();
