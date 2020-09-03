@@ -1,4 +1,4 @@
-const homePage = require('../pages/homepage');
+const homePage = require('../old-pages/homepage');
 const { Browser } = require('selenium-webdriver');
 
 describe('Home page elements handle', () => {
