@@ -1,5 +1,3 @@
-const { TouchSequence } = require("selenium-webdriver");
-
 class BlazePage {
 
     // NAVBAR ELEMENTS 
@@ -49,6 +47,7 @@ class BlazePage {
     }
 
 
+    // NON-GETTER methods 
     navSpecificElement(index) {
         return this.navParent.$(`li:nth-child(${index})`)
     }
@@ -63,4 +62,5 @@ class BlazePage {
         return this.footerSpecificElement(index).getText();
     }
 }
+
 module.exports = new BlazePage();
