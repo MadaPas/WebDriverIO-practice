@@ -25,6 +25,7 @@
     "@wdio/spec-reporter": "^6.4.0",
     "@wdio/sync": "^6.4.5",
     "chromedriver": "^85.0.0",
+    "global-agent": "^2.1.12",
     "mocha": "^8.1.3",
     "mochawesome": "^6.1.1",
     "wdio-chromedriver-service": "^6.0.3"

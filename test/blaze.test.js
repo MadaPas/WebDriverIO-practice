@@ -24,4 +24,22 @@ describe('Blaze page elements handle', () => {
         blazePage.getFooterSpecificChildElementText(1);
     })
 
+    it('Main heading', () => {
+        browser.pause(2000);
+        console.log('element-disabled' + blazePage.mainHeader.isDisplayed());  // RESULT -> true or false 
+        console.log('element-enabled' + blazePage.mainHeader.isEnabled());
+        console.log('element-existing' + blazePage.mainHeader.isExisting());
+        console.log('element-viewport' + blazePage.mainHeader.isDisplayedInViewport());
+        browser.pause(2000);
+        console.log('jmeter element: ' + blazePage.jmeterElement.isDisplayedInViewport());
+        browser.pause(2000);
+
+    });
+    it.only('Click on product link (if displayed)', () => {
+        browser.pause(2000);
+        blazePage.clickOnProductLink();
+        browser.pause(3000);
+
+    });
+
 });

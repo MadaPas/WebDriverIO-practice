@@ -9,11 +9,11 @@ describe('Interaction with website', () => {
         // search2.click();
         // browser.pause(3000);
 
-
         const howItWorks = $('[data-link-id="signup_link"]');
         howItWorks.click();
         browser.pause(5000);
         console.log(howItWorks);
-    }); 
+        
+    });
 });
 
