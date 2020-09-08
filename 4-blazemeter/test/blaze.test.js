@@ -35,7 +35,7 @@ describe('Blaze page elements handle', () => {
         browser.pause(2000);
 
     });
-    it.only('Click on product link (if displayed)', () => {
+    it('Click on product link (if displayed)', () => {
         browser.pause(2000);
         blazePage.clickOnProductLink();
         browser.pause(3000);

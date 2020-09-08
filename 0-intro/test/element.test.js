@@ -1,21 +1,20 @@
 describe('Interaction with web elements', () => {
-
+    beforeEach(() => {
+        browser.url('https://www.amazon.com/');
+    });
     it('Enters value in search field', () => {
-        browser.url('/');
         const search = $('#twotabsearchtextbox');
         search.setValue('Apple Mac Book');
         browser.pause(3000);
     });
 
     it('Gets the text from a span', () => {
-        browser.url('/');
         const label = $('#glow-toaster-body');
         label.getText();
         browser.pause(3000);
     });
 
     it('Clicks on search button', () => {
-        browser.url('/');
         const search = $('#twotabsearchtextbox');
         search.setValue('Apple Mac Book');
         browser.pause(3000);
@@ -25,7 +24,6 @@ describe('Interaction with web elements', () => {
     });
 
     it('Searches by category', () => {
-        browser.url('/');
         //click 3 dots
         const menu = $('a#nav-hamburger-menu');
         menu.click();

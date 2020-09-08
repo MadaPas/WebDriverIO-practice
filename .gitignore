@@ -1,5 +1,10 @@
 text.txt
-/node_modules
 
-upwork.test.js
-upwork.page.js
+/0-intro/test/upwork.test.js
+
+/0-intro/node_modules
+/1-practice/node_modules
+/2-upwork
+/3-duck/node_modules
+/4-blazemeter/node_modules
+/5-heroku/node_modules

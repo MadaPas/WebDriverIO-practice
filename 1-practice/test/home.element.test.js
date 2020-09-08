@@ -1,4 +1,4 @@
-const homePage = require('../old-pages/homepage');
+const homePage = require('../pages/home.page.js');
 
 describe('Home page elements handle', () => {
     
