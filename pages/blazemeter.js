@@ -70,13 +70,13 @@ class BlazePage {
         return $('h2.home_video__title')
     }
 
-    
+
     // create a wrapper for the mainHeader
-    get productLink () {
+    get productLink() {
         return $('ul.list-nav-links li:nth-child(1) a');
     }
     clickOnProductLink() {
-        if(this.productLink.isDisplayed() === true) {
+        if (this.productLink.isDisplayed() === true) {
             this.productLink.click();
         }
     }
