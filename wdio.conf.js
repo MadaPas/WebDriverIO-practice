@@ -206,6 +206,25 @@ exports.config = {
      */
     // beforeTest: function (test, context) {
     // },
+
+
+    beforeTest: function () {
+        const chai = require('chai');
+
+        const chaiWebdriver = require('chai-webdriverio').default;
+        chai.use(chaiWebdriver(browser));
+        const expect = require('chai').expect;
+        const should = require('chai').should();
+        const assert = require('chai').assert;
+
+        global.assert = assert;
+        global.should = should;
+        global.expect = expect;
+        // global.usr_mail = TEST_USER;
+        // global.usr_pwd= TEST_PASS;
+        
+    },
+
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)
