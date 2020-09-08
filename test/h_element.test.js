@@ -5,6 +5,32 @@ beforeEach(() => {
 });
 
 describe("Test some element actions", () => {
+
+    it("Get text for element", () => {
+        let el = $("h2").getText(); //direct
+        let el1 = herokuApp.subHeading.getText(); //using page object to store locators
+        let el2 = herokuApp.pageFooter.getText();
+        console.log(el, "\n", el1, "\n", el2);
+        herokuApp.getLiText();
+        herokuApp.getSpecificElementText(3);
+    });
+
+    it("Check: footer displayed", () => {
+        console.log(herokuApp.pageFooter.isDisplayed());
+    });
+
+    it("Check: header exists", () => {
+        console.log(herokuApp.pageHeader.isExisting());
+    });
+
+    it("Check: footer in viewport", () => {
+        console.log(herokuApp.pageFooter.isDisplayedInViewport());
+    });
+
+    it("Click on the element", () => {
+        herokuApp.clickOnLInk();
+    });
+
     it("should click on the element", () => {
         herokuApp.clickOnLInk();
         expect(browser.getUrl()).equals("https://the-internet.herokuapp.com/abtest");
